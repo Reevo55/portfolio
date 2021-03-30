@@ -5,6 +5,10 @@
   margin-bottom: 3rem;
   flex-direction: column;
 
+  &__img {
+    border-radius: 1.5rem;
+  }
+
   @media (max-width: 768px) {
     &__img {
       margin-top: 2rem;
