@@ -307,7 +307,8 @@ body {
     background-color: #f02d3a; }
   @media (max-width: 768px) {
     .button {
-      font-size: 1rem; } }
+      font-size: 1rem;
+      padding: 0.5rem 1rem; } }
 
 .initials {
   font-size: 1rem;
