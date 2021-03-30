@@ -1,0 +1,100 @@
+body {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 62.5%;
+  line-height: 1.7;
+}
+
+%secondary-shared {
+  color: $color-grey-dark-2;
+  font-family: $secondary-font;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+%primary-shared {
+  color: $color-white;
+  backface-visibility: hidden;
+  text-decoration: none;
+}
+
+%tertiary-shared {
+  color: $color-primary;
+  font-family: $primary-font;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.text-primary {
+  @extend %primary-shared;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-secondary {
+  @extend %secondary-shared;
+  font-size: 1rem;
+}
+
+.text-tertiary {
+  @extend %tertiary-shared;
+
+  font-size: 1.6rem;
+}
+
+.text-small {
+  @extend %primary-shared;
+  font-family: $tertiary-font;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.heading-primary {
+  color: $color-white;
+  font-family: $primary-font;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.heading-secondary {
+  color: $color-primary;
+  font-family: $primary-font;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.heading-tertiary {
+  color: $color-white;
+  font-family: $secondary-font;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.link-primary {
+  color: $color-white;
+  font-size: 1rem;
+  transition: $t-normal;
+
+  &:hover,
+  &:focus {
+    color: $color-primary;
+  }
+}
+
+.paragraph-primary {
+  @extend %primary-shared;
+  font-size: 1.2rem;
+}
+
+.paragraph-secondary {
+  @extend %secondary-shared;
+  font-size: 0.8rem;
+}
+
+.paragraph-tertiary {
+  @extend %tertiary-shared;
+  font-size: 1.2rem;
+}

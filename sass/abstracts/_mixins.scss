@@ -1,0 +1,28 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin horizontalCenter {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin grid($columns) {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-gap: half($default-font-size);
+  grid-auto-rows: minmax(auto, auto);
+}

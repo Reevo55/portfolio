@@ -1,0 +1,14 @@
+.button {
+  font-size: 2rem;
+  padding: 0.5rem 2.5rem;
+  border: 1px solid $color-primary;
+  color: $color-white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: $t-normal;
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary;
+  }
+}

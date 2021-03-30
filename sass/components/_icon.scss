@@ -1,0 +1,10 @@
+.icon {
+    color: $color-primary;
+    font-size: 3rem;
+    margin: 0 0.4rem;
+
+    &:hover {
+        color: $color-grey-dark;
+        animation: iconHover 0.2s linear;
+    }
+}

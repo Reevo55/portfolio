@@ -1,0 +1,18 @@
+.skills {
+  @include grid(3);
+
+  &--icon {
+    font-size: 2rem;
+    text-align: center;
+    color: $color-primary;
+  }
+
+  &__content {
+    h3 {
+      font-family: $tertiary-font;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: $color-white;
+    }
+  }
+}

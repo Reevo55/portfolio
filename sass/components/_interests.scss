@@ -1,0 +1,15 @@
+.interests {
+  @include grid(2);
+
+  &--icon {
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+
+    &:first-child,
+    &:nth-child(2n + 4),
+    &:nth-child(2n + 5) {
+      color: $color-primary;
+    }
+  }
+}

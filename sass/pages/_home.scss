@@ -1,0 +1,83 @@
+%section-shared {
+  height: 85vh;
+}
+
+%container-shared {
+  width: 60%;
+  margin: 5rem auto;
+}
+
+.section-startup {
+  @extend %section-shared;
+
+  background: linear-gradient(
+    to bottom,
+    #111314 0%,
+    $background-color-primary 100%
+  );
+  overflow: hidden;
+
+  &__container {
+    @extend %container-shared;
+
+    &--top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &--middle {
+      @include horizontalCenter;
+      width: 50%;
+    }
+  }
+}
+
+.section-experience {
+  @extend %section-shared;
+}
+
+.section-skills {
+  &__container {
+    @extend %container-shared;
+  }
+}
+
+.section-projects {
+  &__container {
+    @extend %container-shared;
+  }
+}
+
+.section-about {
+  &__container {
+    @extend %container-shared;
+
+    &--flex {
+      display: flex;
+    }
+
+    &--left {
+      width: 60%;
+    }
+
+    &--right {
+      width: 40%;
+    }
+  }
+}
+
+.section-contact {
+  &__container {
+    @extend %container-shared;
+    display: flex;
+
+    &--left {
+      width: 35%;
+    }
+
+    &--right {
+      width: 65%;
+    }
+  }
+}
