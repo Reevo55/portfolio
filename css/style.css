@@ -411,7 +411,8 @@ body {
   margin-bottom: 3rem;
   flex-direction: column; }
   .project__img {
-    border-radius: 1.5rem; }
+    border-radius: 1.5rem;
+    max-height: 50vh !important; }
   @media (max-width: 768px) {
     .project__img {
       margin-top: 2rem; } }
