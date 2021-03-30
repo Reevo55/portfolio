@@ -29,12 +29,24 @@
     &--middle {
       @include horizontalCenter;
       width: 50%;
+
+      @media (max-width: 768px) {
+        width: 60%;
+      }
     }
   }
 }
 
 .section-experience {
   @extend %section-shared;
+
+  @media (max-width: 1000px) {
+    height: 120vh;
+  }
+
+  @media (max-width: 768px) {
+    height: 80vh;
+  }
 }
 
 .section-skills {
@@ -55,14 +67,25 @@
 
     &--flex {
       display: flex;
+      flex-direction: column;
     }
 
-    &--left {
-      width: 60%;
+    @media (min-width: 768px) {
+      flex-direction: row;
+
+      &--left {
+        width: 60%;
+      }
+
+      &--right {
+        width: 40%;
+      }
     }
 
-    &--right {
-      width: 40%;
+    @media (max-width: 768px) {
+      &--right {
+        margin-top: 3rem;
+      }
     }
   }
 }
@@ -70,14 +93,21 @@
 .section-contact {
   &__container {
     @extend %container-shared;
-    display: flex;
-
-    &--left {
-      width: 35%;
+    &--flex {
+      display: flex;
+      flex-direction: column;
     }
 
-    &--right {
-      width: 65%;
+    @media (min-width: 768px) {
+      flex-direction: row;
+
+      &--left {
+        width: 35%;
+      }
+
+      &--right {
+        width: 65%;
+      }
     }
   }
 }

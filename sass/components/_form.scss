@@ -13,8 +13,10 @@
 }
 
 .form {
+  @media (min-width: 768px) {
+    margin-left: 4rem;
+  }
   margin-top: 1rem;
-  margin-left: 4rem;
   display: flex;
   flex-direction: column;
   flex-direction: column;

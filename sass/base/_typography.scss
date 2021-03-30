@@ -29,17 +29,27 @@ body {
   @extend %primary-shared;
   font-size: 3rem;
   line-height: 1;
+
+  @media (max-width: 768px) {
+    font-size: 1.6rem;
+  }
 }
 
 .text-secondary {
   @extend %secondary-shared;
   font-size: 1rem;
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
 }
 
 .text-tertiary {
   @extend %tertiary-shared;
 
   font-size: 1.6rem;
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 }
 
 .text-small {
