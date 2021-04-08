@@ -10,5 +10,5 @@ Portfolio zostało stworzone w celu dodatku do CV. Nie ma w żaden sposób użyt
 
 Dziękuje za pomoc Dawidowi Bilińskiemu.
 Wykorzystałem https://codepen.io/saransh/pen/BKJun. Dziękuje za ten świetny pomysł oraz kod.
-Inspiracje designu zaczęrpnąłem od ghstcode, dziękuje za świetny pomysł na stronę.
+Inspiracje designu zaczerpnąłem od ghstcode, dziękuje za świetny pomysł na stronę.
 Implementacja jest całkowicie własna.
